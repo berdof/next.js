@@ -42,6 +42,9 @@ export default async function createCompiler (dir, { dev = false, quiet = false,
     const entries = {
       'main.js': [
         ...defaultEntries,
+        'immutable',
+        'moment',
+        'moment-duration-format',
         mainJS
       ]
     }
